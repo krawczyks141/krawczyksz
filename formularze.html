@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <title> Strona Szymona-Projektowanie Stron internetowych</title>
+    <meta charset="UTF-8">    
+</head>
+<body> 
+
+    <div style="background-color:grey;">
+    <h1> <center> Projektowanie stron internetowych-Barbara Micińska </center></h1>
+    
+    </div>
+    <div style="float:left;width:30%;height:550px;background-color:#d3d3d3;">
+        <h3>HTML</h3>
+            <a href="index1.html">STRONA GŁÓWNA</a> <br/>
+            <a href="Nauczyciele.html">NAUCZYCIELE</a> <br/>
+            <a href="zdjecia.html">ZDJĘCIA</a> <br/>
+            <a href="Tabele.html">TABELA</a> <br/>
+            <a href="Krawczyk.html">TABELA NA OCENĘ</a> <br/>
+            <a href="Listy.html">LISTY</a> <br/>
+            <a href="ListyKrawczyk.html">LISTY NA OCENĘ</a> <br/>
+            <a href="Formularze.html">FORMULARZE</a> <br/>
+
+
+    </div>
+    <div style="float:right;width:70%;">
+        <h3>Treść strony</h3>
+<form>
+    <h1><center>FORMULARZ PRZYKŁADOWY</center></h1>
+    <p>Imie i nazwisko<input type="text" name="Iin"/>  </p>
+    <p>Adres E-mail<input type="email" name="email"/>  </p>
+    <p>Hasło<input type="password" name="haslo"/>  </p>
+
+<fieldset>
+    <legend> Płeć: </legend>
+        <p><input type="radio" name="plec"/> MĘŻCZYZNA </p>
+        <p><input type="radio" name="plec"/> KOBIETA </p>
+
+        <p><input  id="male" type="radio" name="gender"/>  
+        <label for="male">  mężczyzna  </label> </p>
+        <p><input id="female" type="radio" name="gender"/>
+        <label for="female">  kobieta  </label> </p>
+</fieldset>
+
+<fieldset>
+    <legend> Języki, którymi władasz: </legend>
+        <p><input type="checkbox" name="ang" checked="checked" /> Angielski </p>
+        <p><input type="checkbox" name="nie"/> Niemiecki </p>
+        <p><input type="checkbox" name="chn"/> Chiński </p>
+</fieldset>
+<p>
+    <select size="4" name="nazwa_owoce" multiple > 
+        <optgroup label="Ulubione owoce">
+            <option value="truskawki"> Truskawki 
+            <option value="banany"> Banany 
+            <option value="maliny"> Maliny 
+
+
+        </optgroup>
+    </select> 
+</p>
+
+    <select size="7" name="dni" multiple > 
+        <optgroup label=" Dni Wolne">
+            <option value="sobota"> Sobota
+            <option value="niedziela">Niedziela
+        </optgroup>
+        <optgroup label="Dni Robocze">
+            <option value="sobota"> Poniedziałek
+            <option value="niedziela"> Wtorek
+            <option value="sobota"> Środa
+            <option value="niedziela"> Czwartek
+            <option value="sobota"> Piątek
+                    
+        </optgroup>
+    </select> 
+      
+
+    <p>
+       Przesyłka<input list="blok" name="przesylka"/>
+            <datalist id="blok">
+                <option value="Ekonomiczna">
+                <option value="Priorytetowa">
+                <option value="Ekspresowa">
+            </datalist>
+        <input type="submit" name="Przeslij">
+
+
+           
+
+    </p>
+
+    <p>
+
+        <textarea cols="50" rows="6">
+            Jan Niezbędny
+            ul.Nieznana 3
+            40-001 Katowice
+            Polska
+
+
+        </textarea>
+
+    </p>
+
+    <p>
+
+        <textarea cols="50" rows="6">
+            Wprowadź swój adres
+
+
+        </textarea>
+
+    </p>
+
+
+    <p>
+        <input type="reset"/>-Przycisk resetujący stronę
+    </p>
+
+
+    <p>
+        <input type="button" name="dupa" value="Opuść stronę"/>  
+    </p>
+
+
+    <p><button type="button" id="kupteraz" name="przycisk_kupowania" onclick="alert('Zakupiono - wygenerowano zdarzenie')"> Kupuj teraz! </button> - po nacisnięciu (button) zostanie wygenerowane zdarzenie </p>
+    
+    <p>
+        <input type="file"/>
+    </p>
+
+    <p>
+        Accesskey I(ALT+I)-skrót klawiaturowy:<label for="skrot"><br/>Imię:</label>
+        <input id="skrot" type="text" name="imie" accesskey="I"/>
+    </p>
+
+    <p>
+        <input type="image" name="zdjeciegekon" src="Foty/gekon.jpeg" width="200" height="200"/>
+    </p>
+
+    <p>
+        <fieldset>
+            <legend>Usprawnienia w formularzach (HTML 5)</legend>
+            <p>AutoFocus:<input type="text"><br/></p>
+            <p>AutoCompelete:<input type="text"><br/></p>
+            <p>Wypełnij:<input type="text" required><br/></p>
+            <p>E-mail:<input type="email" value="adres@poczta.pl"><br/></p>
+            <p>URL:<input type="url" value="http://"><br/></p>
+            <p>Liczba:<input type="number" value="1"><br/></p>
+            <p>Data:<input type="date"><br/></p>
+            <p>Color:<input type="color"><br/></p>
+
+            <form action="/action_page.php"   oninput="x.value=parseInt(a.value)+parseInt(b.value)">    0     
+                <input type="range"  id="a" name="a" value="50">    100 +   
+                <input type="number" id="b" name="b" value="50">    =     
+                <output name="x" for="a b"></output>       <br /><br />   
+                <input type="submit"> </form>  
+                 
+               <form action="onclick"  oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+                 0
+                 <input type="range"  id="a" name="a" value="50">
+                 100 +
+                 <input type="number" id="b" name="b" value="50">
+                 =
+                 <output name="x" for="a b"></output>
+                 <br><br>
+                 <input type="submit">
+               </form> 
+
+
+
+
+        </fieldset>
+
+
+
+
+    </p>
+</form>
+
+
+</div>
+<div style="background-color:grey;clear:both;"><center>&copy;S.K.,September 2023</center>
+
+
+
+</div>
+
+</body>
+</html>

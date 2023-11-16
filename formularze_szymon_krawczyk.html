@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <title> </title>
+    <meta charset="UTF-8">    
+</head>
+<body> 
+<table border="1">
+    <tr>
+        <td><fieldset> <legend>ADRES</legend>
+        <form>
+            <input type="radio" id="a1"/>
+                <label for="a1">podstawowy  </label>
+            <input type="radio" id="a2"/>
+                <label for="a2">podstawowy  </label>
+            <input type="radio" id="a3"/>
+                <label for="a3">podstawowy  </label>         
+            <input type="radio" id="a4"/>
+                <label for="a4">podstawowy  </label> 
+
+                <p>Nazwa <input type="text"  value="Sklep wielobranżowy Poligraf"/></p>
+                <p>Ulica <input type="text" /></p>
+                <p>Numer/lokal <input type="text" /></p>
+                <p>Kod pocztowy <input type="pattern"  value="40-671"/></p>
+                <p>Miejscowość <input type="text"  value="Katowice"/></p>
+                <p>Telefon <input type="number"  value="=48 601 601 601"/></p>
+                <p>E-mail <input type="email"  value="info@insert.com"/></p>
+        </form>
+        </fieldset></td>
+        <td> <p><button type="submit" onclick="allert('Wysłano')">WYŚLIJ</button></p> <button type="reset" onclick="allert('Usunięto')">USUŃ</button></td>
+    </tr>
+  
+
+
+
+
+
+
+</table><br/>
+
+
+<table border="2">
+    <tr>
+        <fieldset><legend>WYSYŁKA</legend>
+            <p>
+                Przesyłka<input list="blok" name="przesylka"/>
+                     <datalist id="blok">
+                         <option value="Ekonomiczna">
+                         <option value="Priorytetowa">
+                         <option value="Ekspresowa">
+                     </datalist>
+            </p>
+            <p>
+                     Waga(g)<input type="text" name="1000"/>
+             </p>
+             <p>
+                Gabaryt
+                    <select size="4" name="nazwa_owoce" multiple > 
+                            <option value="truskawki"> S 
+                            <option value="banany"> M 
+                            <option value="maliny"> L 
+                            <option value="maliny"> XL 
+                
+                        </optgroup>
+                    </select> 
+                
+             </p>
+             <p>
+                Wartość <input type="text" value="0,00"/> zł
+            </p>
+            <p>
+               Numer rachunku <input type="text"/> 
+            </p>
+            <p>Data wysyłki<input type="date"><br/></p>
+
+        
+        
+        
+        
+        
+        
+        
+        
+        </fieldset>
+    </tr>
+    <tr> 
+        <p><input type="checkbox"/> Z</p>
+        <p></p><input type="checkbox"/> R</p>
+        <p></p><input type="checkbox"/> O</p>
+        <p></p><input type="checkbox"/> W</p>
+        <p></p><input type="checkbox"/> S</p>
+        <p></p><input type="checkbox"/> K</p>
+    
+    
+    
+    
+    
+    </tr>
+
+
+</table>
+   
+
+</body>
+</html>
