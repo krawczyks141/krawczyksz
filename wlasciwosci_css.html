@@ -145,13 +145,72 @@ h2#ramka3 {
       
 }
 
-a:link a:visited {
+a.drzewo:link  {
       color:black;
       text-decoration: none;
       background-color: fuchsia;
       border-style: solid;
       border-radius: 5px;
 
+}
+
+a.drzewo :visited  {
+      color:black;
+      text-decoration: none;
+      background-color: fuchsia;
+      border-style: solid;
+      border-radius: 5px;
+
+}
+
+a.krzak:visited  {
+      color:black;
+      text-decoration: none;
+      background-color: yellow;
+      border-style: double;
+      border-radius: 5px;
+      padding: 10pt;
+      background-clip: content-box;
+      border-color: aqua;
+}
+
+a.krzak:link  {
+      color:black;
+      text-decoration: none;
+      background-color: yellow;
+      border-style: double;
+      border-radius: 5px;
+      padding: 10pt;
+      background-clip: content-box;
+}
+
+a.krzak:hover  {
+      color:aqua;
+      text-decoration: none;
+      background-color: green;
+      border-style: outset;
+      border-radius: 5px;
+      padding: 10pt;
+      background-clip: content-box;
+      border-color: white;
+}
+
+a.krzak:active  {
+      color:white;
+      text-decoration: dotted;
+      background-color: red;
+      border-style: outset;
+      border-radius: 5px;
+      padding: 10pt;
+      background-clip: content-box;
+      border-color: white;
+}
+
+ul.punkty{
+      list-style-type:square;
+      list-style-position: outside;
+      color:blue;
+      font-family: tahoma;
 }
 
 </style> </head>
@@ -255,9 +314,29 @@ zadanie 1A-czcionka </body><br/>
                   TŁO: none; TEKST: czarny, ODSTĘP: 5px, SZEROKOŚĆ: 33%; border: 50 px solid;
                   border-image: url(foty/gwiazdka1.gif) 100 round;</h2><br/>
 
-                  <a href="http://www.onet.pl" target="new"> ONET</a>
-      
+                  <a class="drzewo" href="http://www.onet.pl" target="new"> ONET</a>
 
+                  <a class="drzewo" href="https://www.wp.pl" target="new"> WIRTUALNA POLSKA</a>
+
+                  <a class="drzewo" href="http://www.tsi-pai.cba.pl" target="new"> STRONA TSI-PAI</a> 
+                  
+                  <br/><br/><br/><br/><br/>
+
+                  <a class="krzak" href="https://www.google.pl/?hl=pl" target="new">GOOGLE</a>
+
+                  <a class="krzak" href="https://zspm.pl/" target="new">ZSPM</a>
+
+                  <a class="krzak" href="http://www.tsi-pai.cba.pl" target="new"> STRONA TSI-PAI</a>
+
+                  <br/><br/><br/><br/><br/>
+      
+                  <ul class="punkty"> PIĘĆ ZALET PRZEDMIOTU PSI:
+                        <li> Dwie godziny pod rząd </li>
+                        <li> Lubie programowanie  </li>
+                        <li> Tworzenie stron w internecie które każdy może zobaczyć </li>
+                        <li> Świetny nauczyciel </li>
+                        <li> Może się przydać w uczeniu się innych języków programowania </li>
+                        </ul>
       
 
 
